@@ -8,15 +8,14 @@ window.getLocations = (data) => {
 
     for (key in data) {
         let items = Object.values(data[key]);
-        console.log(items);
 
         let locations = items[4].location;
         let locationsLat = locations.lat;
         let locationsLng = locations.lng;
 
         let label = items[2];
-        let position = items[1];
-        let detail = `${label}; \nCalif:${position}`;
+        let numberRate = items[1];
+        let detail = `${label}; \nCalificación: ${numberRate}`;
            
         let locationData = {
             position: {

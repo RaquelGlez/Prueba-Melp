@@ -16,17 +16,16 @@
         </div>  
     </header>
     <section class="container">
-        <div>
-            <ul id="lista"></ul>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" id="rating" placeholder="Busca el lugar por su calificación (de 0 a 4)">
+            <div class="input-group-append">
+              <button class="btn btn-info" type="button" id="search-user">Buscar</button>
+            </div>
         </div>
-                
-        <div class="col-12" id="map"></div>
-                <!-- <div class="row">
-                    <div class="col-6" id="map"></div>
-                    <div class="col-6">
-                    </div>
-                </div> -->
-                
+        <div>
+            <p id="result-rating"></p>
+        </div>  
+        <div class="col-12" id="map"></div>               
     </section>
         
 
